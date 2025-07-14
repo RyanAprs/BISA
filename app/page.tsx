@@ -18,6 +18,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import logo from "@/public/logo.png";
+import Image from "next/image";
 
 export default function Component() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,8 +31,8 @@ export default function Component() {
         <div className="container mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-[#2a61e7] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">B</span>
+              <div className="w-8 h-8 rounded-full flex items-center justify-center">
+                <Image src={logo} alt="logo" />{" "}
               </div>
               <span className="text-xl sm:text-2xl font-bold text-gray-900">
                 BISA
@@ -700,8 +702,8 @@ export default function Component() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
             <div className="col-span-1 sm:col-span-2 md:col-span-1">
               <div className="flex items-center space-x-2 mb-4 sm:mb-6">
-                <div className="w-8 h-8 bg-[#2a61e7] rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">B</span>
+                <div className="w-8 h-8  rounded-full flex items-center justify-center">
+                  <Image src={logo} alt="logo" />{" "}
                 </div>
                 <span className="text-xl sm:text-2xl font-bold">BISA</span>
               </div>
